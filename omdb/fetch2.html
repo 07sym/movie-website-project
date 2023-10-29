@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Data</h1>
+    <div id="container"></div>
+</body>
+<script>
+    let container = document.getElementById("container")
+    let data = []
+
+    fetch("https://reqres.in/api/users/2")
+    .then(function(res){
+        return(res.json())
+    })
+    .then(function(res){
+        data = res.data
+        console.log("data:" , data)
+    })
+    .catch(function(error){
+        console.log("error:", error)
+    })
+
+    function displaydata(user){
+
+    let avatar = document.createElement("img")
+    avatar.src = 
+
+    }
+</script>
+</html>
